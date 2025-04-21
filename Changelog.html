@@ -5,28 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Changelog</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
       body {
-        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #000000;
         max-width: 800px;
-        height: 800px;
+        height: 900px;
         margin: auto;
         margin-top: 50px;
+        border-radius: 30px;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "width" 100;
+        align-items: center;
       }
+      .heading h1 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+      .heading p {
+        font-size: 1.5rem;
+        color: #100c0c52;
+      }
+
       .heading {
         text-align: center;
         margin-top: 30px;
         padding: 20px;
-        background-color: #f4f4f4;
       }
       .changelog {
         display: flex;
         flex-direction: row;
-        border: solid 1px #eb0335;
         justify-content: space-evenly;
         margin-top: 50px;
         height: 500px;
@@ -35,14 +52,14 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border: solid 1px #f2da06;
-        width: 150px;
+        width: 180px;
+        color: rgba(7, 7, 7, 0.435);
       }
       .notes {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border: #2e03eb solid 1px;
+        margin-left: 20px;
       }
       .linecircle,
       line {
@@ -52,16 +69,30 @@
 
       .linecircle span {
         display: flex;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         background-color: #000000;
-        border-radius: 60%;
+        border-radius: 50%;
         position: relative;
-        left: -53px;
-        margin: 41px;
+        left: -60px;
+        bottom: 20px;
+        margin: 50px;
       }
       .changelog p {
         margin: 25px 0;
+      }
+      button {
+        margin-top: 50px;
+        background-color: #030303;
+        padding: 20px;
+        width: 300px;
+        color: white;
+        font-size: 1rem;
+        border-radius: 30px;
+      }
+      button:hover {
+        background-color: #100f0fab;
+        cursor: pointer;
       }
     </style>
   </head>
