@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        border: 1px solid #ccc;
+        max-width: 800px;
+        height: 800px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .heading {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .changelog {
+        display: flex;
+        flex-direction: row;
+        border: solid 1px #eb0335;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        height: 500px;
+      }
+      .date {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: solid 1px #f2da06;
+        width: 150px;
+      }
+      .notes {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: #2e03eb solid 1px;
+      }
+      .linecircle,
+      line {
+        width: 1px;
+        border: solid 1px #160c85;
+      }
+
+      .linecircle span {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        background-color: #000000;
+        border-radius: 60%;
+        position: relative;
+        left: -53px;
+        margin: 41px;
+      }
+      .changelog p {
+        margin: 25px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Changelog</h1>
+      <p>Here's everything we have shipped in the past few days</p>
+    </div>
+    <content class="changelog">
+      <div class="date">
+        <p>September 3, 2024</p>
+        <p>August 28, 2024</p>
+        <p>August 25, 2024</p>
+        <p>August 22, 2024</p>
+        <p>August 15, 2024</p>
+        <p>August 10, 2024</p>
+        <p>August 01, 2024</p>
+      </div>
+      <div class="linecircle">
+        <div class="line"></div>
+        <div class="circle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="notes">
+        <p>Announcing Project on Frontend Roadmap</p>
+        <p>Building Your Learning Habits with Learning Streaks</p>
+        <p>Git and GitHub Roadmap</p>
+        <p>Submit Your Project Solution and Get Feedback</p>
+        <p>Backend Project Ideas</p>
+        <p>Redis Roadmap</p>
+        <p>Changelog page to help you stay in the loop</p>
+      </div>
+    </content>
+    <button class="click">Visit Complete Changelog</button>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog Component</title>
+    <style>
+      /* styles.css */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f9f9f9;
+      }
+
+      .changelog-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 40px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        color: gray;
+        margin-bottom: 30px;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 30px;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: black;
+      }
+
+      .timeline-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .date {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-right: 10px;
+        color: gray;
+        flex-shrink: 0;
+        width: 120px;
+        text-align: right;
+      }
+
+      .description {
+        font-size: 0.9rem;
+        text-align: left;
+      }
+
+      .changelog-button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .changelog-button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="changelog-container">
+      <h1>Changelog</h1>
+      <p class="subtitle">
+        Here's everything we have shipped in the past few days
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="date">September 3, 2024</p>
+          <p class="description">Announcing Projects on Frontend Roadmap</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 28, 2024</p>
+          <p class="description">
+            Build your learning habits with learning streaks
+          </p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 25, 2024</p>
+          <p class="description">Git and GitHub Roadmap</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 22, 2024</p>
+          <p class="description">
+            Submit your project solution and get feedback
+          </p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 15, 2024</p>
+          <p class="description">Backend Project Ideas</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 10, 2024</p>
+          <p class="description">Redis roadmap</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">August 1, 2024</p>
+          <p class="description">Changelog page to help you stay in the loop</p>
+        </div>
+      </div>
+      <button class="changelog-button">Visit Complete Changelog</button>
+    </div>
+  </body>
+</html>
